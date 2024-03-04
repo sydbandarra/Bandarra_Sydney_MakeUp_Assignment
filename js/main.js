@@ -1,7 +1,8 @@
 // JS Document
 
 // Step 1 - Variables
-let buttons; // how can i grab all the buttons for show/hiding content in my HTML?
+let buttons = document.querySelectorAll('.btn');
+ // how can i grab all the buttons for show/hiding content in my HTML?
 
 // Step 2 - Methods
 function toggleQuestion(e) {
