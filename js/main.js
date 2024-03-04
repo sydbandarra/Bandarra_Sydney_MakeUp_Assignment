@@ -8,6 +8,7 @@ let buttons = document.querySelectorAll('.btn');
 function toggleQuestion(e) {
     const questionEl = e.currentTarget.parentElement.parentElement;
     console.log(questionEl);
+    questionEl.classList.toggle('active');
 
     // How do i TOGGLE a class name on my questionEl element? in order to turn on/off the class "active"?
     // this should be ONE LINE of code
