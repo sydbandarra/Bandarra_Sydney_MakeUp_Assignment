@@ -16,3 +16,8 @@ function toggleQuestion(e) {
 
 // Step 3 - Event Listeners
 // How do i attach an event listener to all of my buttons, to trigger my toggleQuestion() method?
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.parentNode.parentNode.classList.toggle('active');
+    });
+});
